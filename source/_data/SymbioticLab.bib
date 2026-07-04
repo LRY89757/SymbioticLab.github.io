@@ -2559,3 +2559,21 @@ Large language model (LLM) web agents are usually deployed as tool callers: each
 Large language models (LLMs) are increasingly deployed in multilingual settings, yet the energy costs of serving these models across different languages remain poorly understood. We present a systematic study of inference energy consumption across languages with ML.Energy framework. We find striking disparities: energy consumption per output token varies by up to 8.3x across languages, while total energy for a fixed set of requests varies by up to 179x between the cheapest (English, 17.6 kJ) and the most expensive (Pashto, 3,147 kJ) languages. Our analysis shows that this disparity is driven by two compounding factors: (1) higher per-token energy costs for languages using complex or rare scripts, and (2) more tokens generated for low-resource languages. Moreover, we find a double cost + performance penalty: languages with the highest energy footprints also tend to achieve the lowest task accuracy. We reveal that the energy divide persists across models, hardware, and tasks, suggesting a systemic energy inequity in multilingual LLM deployment. Finally, we recommend that the community treat energy as a first-class evaluation axis, extend reporting checklists and model cards to include it, and adopt deployment-side mitigations for better energy efficiency.
   }
 }
+
+@Article{aspire:arxiv26,
+  author          = {Runyu Lu and Yubo Wu and Ethan Kou and Letian Fu and Wenli Xiao and Ajay Mandlekar and Yinzhen Xu and Guanya Shi and Ken Goldberg and Ang Chen and Mosharaf Chowdhury and Yuke Zhu and Linxi {``Jim''} Fan and Guanzhi Wang},
+  title           = {{ASPIRE}: Agentic /{Skills} Discovery for Robotics},
+  year            = {2026},
+  month           = {Jul},
+  volume          = {abs/2607.00272},
+  archivePrefix   = {arXiv},
+  eprint          = {2607.00272},
+  url             = {https://arxiv.org/abs/2607.00272},
+  publist_confkey = {arXiv:2607.00272},
+  publist_link    = {paper || https://arxiv.org/abs/2607.00272},
+  publist_link    = {website || https://research.nvidia.com/labs/gear/aspire/},
+  publist_topic   = {Systems + AI},
+  publist_abstract = {
+Traditional robot programming is challenging: it requires orchestrating multimodal perception, managing physical contact dynamics, and handling diverse configurations and execution failures. We introduce ASPIRE (Agentic Skill Programming through Iterative Robot Exploration), a continual learning system that autonomously writes and refines robot control programs in a code-as-policy paradigm while compounding experience into a reusable skill library. ASPIRE discovers skills that persist across tasks, simulation and real-world settings, and embodiments. It operates in an open-ended loop with three components: (1) a closed-loop robot execution engine that exposes fine-grained multimodal traces, enabling autonomous failure diagnosis, repair synthesis, and validation; (2) a continually expanding skill library that distills validated fixes into reusable, transferable knowledge; and (3) evolutionary search that generates diverse task sequences and control programs to explore beyond single-trajectory refinement. ASPIRE surpasses prior methods by up to 77% on LIBERO-Pro manipulation under perturbation, 72% on Robosuite bimanual handover, and 32% on BEHAVIOR-1K long-horizon household tasks. Its accumulated library also enables zero-shot generalization to unseen long-horizon tasks: on LIBERO-Pro Long, ASPIRE achieves 31% success versus 4% for prior methods despite their use of test-time reasoning and retries. Finally, simulation-discovered skills provide initial evidence of sim-to-real transfer, substantially reducing real-robot programming effort across different embodiments and robot APIs.
+  }
+}
